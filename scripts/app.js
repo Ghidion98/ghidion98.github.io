@@ -62,19 +62,20 @@ function showProject(name) {
  startTimer();
 
  // Scroll to top button
- const toTop = document.getElementById('toTop');
- window.addEventListener('scroll', () => {
-    if(window.scrollY > 300) {
-       toTop.style.display = 'block';
-    }else {
-        toTop.style.display = 'none';
-    }
- });
+ const toTopBtn = document.getElementById('toTop');
 
- toTop.addEventListener('click',(e) => {
-    e.preventDefault();
-    window.scrollTo({
-       top: 0,
-       behavior: 'smooth'
-    });
- });
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 300) {
+    toTopBtn.style.display = 'block';
+  } else {
+    toTopBtn.style.display = 'none';
+  }
+});
+
+toTopBtn.addEventListener('click', function (e) {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
