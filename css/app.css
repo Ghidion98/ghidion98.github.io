@@ -44,6 +44,25 @@ header {
 #menu.show {
    left: 0;
 }
+.to-top {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   font-size: 2em;
+   background: #0e7be1;
+   color: #fff;
+   padding: 10px;
+   border-radius: 50%;
+   display: none;
+   z-index: 1000;
+   text-decoration: none;
+   transition: all 0.3s ease;
+ }
+ 
+ .to-top:hover {
+   background: #555;
+ }
+ 
 
 /* Profile Image and Social Links Styling */
 .myProfile {
@@ -355,6 +374,15 @@ section {
    }
    nav {
       visibility: hidden;
+   }
+   .to-top {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      font-size: 1em;
+      background: #0e7be1;
+      color: #fff;
+      padding: 3px;
    }
    #home {
       background: #fff;
