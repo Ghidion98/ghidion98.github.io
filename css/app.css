@@ -329,35 +329,63 @@ section {
 
 /* Projects */
 .projects {
+   width: 100%;
+   margin: 60px auto;
+ }
+ 
+ .project-slide {
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   padding: 2rem;
+   justify-content: space-between;
+   gap: 40px;
+   background-color: #111;
+   color: #fff;
+   border-radius: 16px;
+   padding: 30px;
+   margin-bottom: 40px;
+   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+   flex-wrap: wrap;
  }
  
- .image-preview img {
-   width: 500px;
-   height: auto;
-   border-radius: 10px;
-   transition: 0.3s ease;
+ .project-text {
+   flex: 1;
  }
  
- .project-links ul {
-   list-style: none;
-   padding: 0;
+ .project-text h3 {
+   font-size: 24px;
+   color: #00aaff;
+   margin-bottom: 10px;
  }
  
- .project-links li {
-   font-size: 1.5rem;
-   margin: 1rem 0;
-   cursor: pointer;
-   color: #007BFF;
-   transition: 0.3s;
+ .project-text p {
+   font-size: 16px;
+   color: #ccc;
+   margin-bottom: 20px;
  }
  
- .project-links li:hover {
-   text-decoration: underline;
-   color: #0056b3;
+ .project-text a {
+   padding: 10px 20px;
+   background-color: #00aaff;
+   color: #fff;
+   border-radius: 8px;
+   text-decoration: none;
+   transition: background 0.3s ease;
+ }
+ 
+ .project-text a:hover {
+   background-color: #0088cc;
+ }
+ 
+ .project-image {
+   flex: 1;
+   text-align: center;
+ }
+ 
+ .project-image img {
+   width: 100%;
+   max-width: 400px;
+   border-radius: 12px;
+   box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
  }
  
 #hobbies h1, #contact h1 {
@@ -471,4 +499,16 @@ section {
    .skill {
       width: 100%;
    }
+   .project-slide {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .project-text, .project-image {
+      flex: 1 1 100%;
+    }
+  
+    .project-image img {
+      max-width: 90%;
+    }
 }
