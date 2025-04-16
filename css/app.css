@@ -298,6 +298,9 @@ section {
 }
 
 /* Progress Bars */
+#skills {
+   background: #d2d4d2;
+}
 .skills-container {
    display: flex;
    flex-wrap: wrap;
@@ -328,9 +331,9 @@ section {
 }
 
 /* Projects */
-.projects {
+ #projects {
    width: 100%;
-   margin: 60px auto;
+   margin: 10px 0;
  }
  
  .project-slide {
@@ -388,11 +391,58 @@ section {
    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.1);
  }
  
-#hobbies h1, #contact h1 {
-   font-size: 2rem;
-   text-align: center;
-   margin-bottom: 20px;
+#hobbies {
+   width: 100%;
+   margin: 10px 0;
+   padding: 1px;
+   background: #e7ebec;
 }
+#hobbies h1{
+   font-size: 1.6em;
+   margin-bottom: 20px;
+   margin-left: 10px;
+   text-align: left;
+}
+.hope {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+.hobby-card {
+   display: flex;
+   background: #fff;
+   color: #000;
+   border-radius: 16px;
+   overflow: hidden;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+   height: 180px;
+ }
+ 
+ .hobby-card img {
+   width: 40%;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+ }
+ 
+ .hobby-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 16px;
+   width: 60%;
+ }
+ 
+ .hobby-info h3 {
+   margin: 0;
+   font-size: 1em;
+   color: #139320;
+ }
+ 
+ .hobby-info p {
+   font-size: 1.1em;
+   color: #000;
+ }
 
 /* Responsive Design */
 @media(max-width: 768px) {
@@ -510,5 +560,15 @@ section {
   
     .project-image img {
       max-width: 90%;
+    }
+    .hope {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      
+   }
+  
+    .hobby p {
+      font-size: 16px;
     }
 }
