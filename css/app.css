@@ -335,13 +335,19 @@ section {
    width: 100%;
    margin: 10px 0;
  }
+ #projects h1 {
+   font-size: 1.4em;
+   margin-bottom: 30px;
+   margin-left: 10px;
+   text-align: left;
+ }
  
  .project-slide {
    display: flex;
    align-items: center;
    justify-content: space-between;
    gap: 40px;
-   background-color: #111;
+   background: #111;
    color: #fff;
    border-radius: 16px;
    padding: 30px;
