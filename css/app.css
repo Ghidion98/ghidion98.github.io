@@ -1,11 +1,11 @@
-/* General Reset */
+
 * {
    margin: 0;
    padding: 0;
    box-sizing: border-box;
 }
 
-/* Body and Header */
+
 body {
    font-family: Arial, sans-serif;
    line-height: 1.6;
@@ -20,7 +20,7 @@ header {
    align-items: right;
    
 }
-/* Ensure menu is off-screen by default */
+
 #menu {
    position: fixed;
    top: 0;
@@ -64,7 +64,7 @@ header {
  }
  
 
-/* Profile Image and Social Links Styling */
+
 .myProfile {
    text-align: center;
    margin-bottom: 20px;
@@ -94,14 +94,14 @@ header {
    width: 30px;
    height: 30px;
    border-radius: 50%;
-   filter: invert(1); /* makes the icon white on dark background */
+   filter: invert(1); 
    transition: transform 0.2s ease;
 }
 
 .socialLink img:hover {
    transform: scale(1.2);
 }
-/* Mobile Menu Button Styling */
+
 #mobMen {
    width: 50px;
    height: 50px;
@@ -127,7 +127,7 @@ header {
    transition: all 0.3s ease;
 }
 
-/* Hamburger to "X" Transition */
+
 #mobMen.active .bar:nth-child(1) {
    transform: rotate(45deg) translate(5px, 5px);
 }
@@ -138,7 +138,7 @@ header {
    transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Links in the menu */
+
 #menu a {
    color: #fff;
    text-decoration: none;
@@ -416,7 +416,7 @@ section {
 }
 .hobby-card {
    display: flex;
-   background: #fff;
+   background: #ddd;
    color: #000;
    border-radius: 16px;
    overflow: hidden;
@@ -449,7 +449,71 @@ section {
    font-size: 1.1em;
    color: #000;
  }
-
+ #contact {
+   padding-top: 20px;
+   background: #fff;
+   width: 100%;
+   margin: 10px 10px;
+ }
+ 
+ #contact h1 {
+   font-size: 1.6em;
+   margin-bottom: 10px;
+ }
+ 
+ #contact p {
+   font-size: 1.3em;
+   margin-bottom: 10px;
+   color: #000;
+ }
+ 
+ .form {
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: space-between; 
+   gap: 20px;
+ }
+ 
+ .contact-row {
+   display: flex;
+   align-items: center; 
+   gap: 10px; 
+ }
+ 
+ .form-group {
+   display: flex;
+   justify-content: center; 
+ }
+ 
+ .form-group img {
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+ }
+ .form-group:hover {
+   transform: scale(1.2);
+   background: #0e7be1;
+   border-radius: 5%;
+ }
+ 
+ .head {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start; 
+ }
+ 
+ .head a {
+   font-size: 1.3em;
+   color: #0088cc;
+   text-decoration: none;
+ }
+ 
+ .head p {
+   font-size: 1.1em;
+   color: #00aaff;
+ }
+ 
 /* Responsive Design */
 @media(max-width: 768px) {
    
