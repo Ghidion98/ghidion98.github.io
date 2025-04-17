@@ -429,6 +429,7 @@ section {
    height: 100%;
    border-radius: 50%;
    object-fit: cover;
+   margin-left: 20px;
  }
  
  .hobby-info {
@@ -526,7 +527,7 @@ section {
    .to-top {
       position: fixed;
       bottom: 10px;
-      right: 10px;
+      right: 20px;
       font-size: 1em;
       background: #0e7be1;
       color: #fff;
@@ -637,8 +638,16 @@ section {
       gap: 20px;
       
    }
+   .hobby-card img {
+      width: 30%;
+      margin-left: 10px;
+    }
+    .hobby-info {
+      padding: 20px;
+      width: 70%;
+    }
   
     .hobby p {
-      font-size: 16px;
+      font-size: 36px;
     }
 }
