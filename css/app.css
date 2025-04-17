@@ -270,7 +270,7 @@ section {
  }
  
  .texts {
-   flex: 2;
+   display: grid;
    max-width: 600px;
  }
  
