@@ -23,6 +23,29 @@ function showProject(name) {
    }
  }
 
+ // Certificates Slide Image
+
+ document.addEventListener("DOMContentLoaded", () => {
+  let slideIndex = 0;
+  const fadeSlides = document.querySelectorAll('.fade-slide');
+  const total = fadeSlides.length;
+
+  function showSlide(index) {
+    fadeSlides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? '1' : '0';
+    });
+  }
+
+  setInterval(() => {
+    showSlide(slideIndex);
+    slideIndex = (slideIndex + 1) % total;
+  }, 3000);
+
+  showSlide(slideIndex);
+});
+
+
+
  // Home Slide Image
  const slides = document.querySelectorAll('.slide');
  const dots = document.querySelectorAll('.dot');
