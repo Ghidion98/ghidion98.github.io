@@ -631,7 +631,14 @@ a button:hover {
    font-size: 1.1em;
    color: #00aaff;
  }
- 
+ footer {
+   background: #ddd;
+   color: #000;
+   text-align: center;
+   padding: 20px;
+   height: 90px;
+   font-size: 1.6em;
+ }
 /* Responsive Design */
 @media(max-width: 768px) {
    
@@ -786,6 +793,9 @@ a button:hover {
 
    .head a, .head p {
       font-size: 1.1em; 
+   }
+   footer {
+      font-size: 1.2em;
    }
 }
 

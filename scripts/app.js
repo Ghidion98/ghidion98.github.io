@@ -6,23 +6,6 @@ function toggleMenu() {
    menu.classList.toggle('show');
    }
 
-// Projects Slide Image
-function showProject(name) {
-   const image = document.getElementById("projectImage");
-   const link = document.getElementById("projectLink");
- 
-   if (name === "Asmara") {
-     image.src = "assets/images/Asmara.png";
-     link.href = "https://your-asmara-link.com";
-   } else if (name === "Habesha") {
-     image.src = "assets/images/habesha.png";
-     link.href = "https://your-habesha-link.com";
-   } else if (name === "Visca") {
-     image.src = "assets/images/visca.png";
-     link.href = "https://your-visca-link.com";
-   }
- }
-
  // Certificates Slide Image
 
  document.addEventListener("DOMContentLoaded", () => {
