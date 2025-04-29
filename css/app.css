@@ -9,6 +9,7 @@
 body {
    font-family: Arial, sans-serif;
    line-height: 1.6;
+
 }
 
 header {
@@ -68,13 +69,13 @@ header {
 .myProfile {
    text-align: center;
    margin-bottom: 20px;
+   
 }
 
 .myProfile img {
    width: 100px;
    height: 100px;
    border-radius: 50%;
-   border: 2px solid #000;
    margin-bottom: 10px;
 }
 .myProfile p {
@@ -88,13 +89,12 @@ header {
    display: flex;
    gap: 10px;
    justify-content: center;
-}
+}  
 
 .socialLink img {
    width: 30px;
    height: 30px;
    border-radius: 50%;
-   filter: invert(1); 
    transition: transform 0.2s ease;
 }
 
@@ -148,10 +148,12 @@ header {
 nav {
    display: flex;
    justify-content: center;
+   
 }
 .navIcon {
    margin-top: -12px;
    margin-left: 80px;
+   
 }
 .navIcon img {
    width: 20px;
@@ -203,6 +205,15 @@ section {
    left: 50%;
    transform: translate(-50%, -50%);
    font-size: 3em;
+   color: #1002d6;
+   z-index: 2;
+}
+.slide h2 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 3em;
    color: #fff;
    z-index: 2;
 }
@@ -211,8 +222,8 @@ section {
  }
  
  .dot {
-   height:35px;
-   width:35px;
+   height:15px;
+   width:15px;
    background-color: #b73b3b;
    display: inline-block;
    border-radius: 50%;
@@ -468,7 +479,7 @@ a button:hover {
  #documents {
    text-align: center;
    padding: 40px 20px;
-   background-color: #f9f9f9;
+   background-color: #d2d4d2;
    width: 100%;
  }
  
@@ -535,7 +546,10 @@ a button:hover {
    display: flex;
    background: #ddd;
    color: #000;
+   align-items: center;
    border-radius: 16px;
+   padding-left: 10px;
+   margin-bottom: 1.5rem;
    overflow: hidden;
    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
    height: 180px;
@@ -546,7 +560,7 @@ a button:hover {
    height: 100%;
    border-radius: 50%;
    object-fit: cover;
-   margin-left: 20px;
+   margin-left: 10px;
  }
  
  .hobby-info {
@@ -558,20 +572,21 @@ a button:hover {
  }
  
  .hobby-info h3 {
-   margin: 0;
+   margin-top: 10px;
    font-size: 1em;
-   color: #139320;
+   color: #0818c8;
  }
  
  .hobby-info p {
-   font-size: 1.1em;
+   font-size: .9em;
+   margin-bottom: 10px;
    color: #000;
  }
  #contact {
    padding-top: 20px;
-   background: #fff;
+   background: #d2d4d2;
    width: 100%;
-   margin: 10px 10px;
+   
  }
  
  #contact h1 {
@@ -611,7 +626,6 @@ a button:hover {
  }
  .form-group:hover {
    transform: scale(1.2);
-   background: #0e7be1;
    border-radius: 5%;
  }
  
@@ -632,8 +646,8 @@ a button:hover {
    color: #00aaff;
  }
  footer {
-   background: #ddd;
-   color: #000;
+   background: #000;
+   color: #fff;
    text-align: center;
    padding: 20px;
    height: 90px;
@@ -648,6 +662,7 @@ a button:hover {
    nav {
       visibility: hidden;
    }
+   
    .to-top {
       position: fixed;
       bottom: 10px;
@@ -657,11 +672,19 @@ a button:hover {
       color: #fff;
       padding: 3px;
    }
+   .dot{
+      height: 10px;
+      width: 10px;
+   }
    #home {
       background: #fff;
    }
    .slide.active h1{
         font-size: 1em;
+   }
+   .slide.active h2 {
+      font-size: 1.4em;
+      color: #fff;
    }
    #about {
       display: block;
@@ -798,7 +821,7 @@ a button:hover {
       font-size: 1.1em; 
    }
    footer {
-      font-size: 1.2em;
+      font-size: 1em;
    }
 }
 
