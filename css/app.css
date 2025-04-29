@@ -660,6 +660,9 @@ a button:hover {
    #home {
       background: #fff;
    }
+   .slide.active h1{
+        font-size: 1.6em;
+   }
    #about {
       display: block;
       background: #fff;
