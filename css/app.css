@@ -213,8 +213,16 @@ section {
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
-   font-size: 3em;
+   font-size: 3.6em;
    color: #fff;
+   z-index: 2;
+}.slide h3 {
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 3em;
+   color: #1002d6;
    z-index: 2;
 }
 .dots {
@@ -659,6 +667,14 @@ a button:hover {
    #menu {
       padding-top: 10px;
    }
+   #mobMen {
+      width: 35px;
+      height: 35px;
+   }
+   #mobMen .bar {
+      width: 15px;
+      height: 2px;
+   }
    nav {
       visibility: hidden;
    }
@@ -686,6 +702,10 @@ a button:hover {
       font-size: 1.4em;
       color: #fff;
    }
+   .slide h3 {
+      font-size: 1.4em;
+   }
+   
    #about {
       display: block;
       background: #fff;
